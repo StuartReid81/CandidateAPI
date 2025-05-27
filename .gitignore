@@ -1,0 +1,115 @@
+# Compiled binaries
+[Dd]ebug/
+[Rr]elease/
+*.dll
+*.pdb
+*.exe
+*.lib
+*.so
+*.obj
+*.o
+*.lo
+*.la
+*.a
+*.pyc
+*.pyo
+*.bin
+*.suo
+*.user
+*.aps
+*.bsc
+*.map
+*.res
+*.sbr
+*.tlb
+*.tlh
+*.tmp
+*.log
+*.vspscc
+*.vssscc
+*.vsp
+*.genproj
+*.rptproj
+*.sqlproj
+*.shproj
+*.ndm
+*.vsdx
+
+# Visual Studio files
+.vs/                     # Ignore .vs folder (user-specific settings)
+*.user
+*.suo
+*.bak
+*.scc
+*.vsscc
+*.vssscc
+*.vsp
+*.buildlog
+*.publishprofile
+*.opendb
+*.opensdf
+*.sdf
+*.cache
+*.VC.db
+
+# NuGet packages
+packages/                # Old style packages folder
+[Oo]bj/                  # Object files (contains temporary files for builds)
+[Bb]in/                  # Compiled output (binaries)
+*.nuget/
+project.lock.json
+project.assets.json
+package-lock.json        # For npm/Node.js dependencies within .NET projects
+
+# Rider files
+.idea/                   # For Rider IDE
+*.iml
+
+# Resharper files
+_ReSharper.*/
+*.resharper
+*.DotSettings
+*.DotSettings.user
+
+# Test Results
+TestResults/
+
+# Azure/Cloud deployment files
+*.publishsettings
+*.pubxml
+*.wapublish
+*.wppublish
+*.zip
+
+# Visual Studio Code files
+.vscode/
+
+# Other common build and tool files
+.node_modules/
+npm-debug.log
+yarn-error.log
+coverage/
+.env
+.env.*
+
+# Local data stores
+*.mdf
+*.ldf
+*.sqlite
+*.db
+
+# Docker-related files
+docker-compose.vs.debug.yml
+docker-compose.vs.release.yml
+.dockerignore
+
+# Solution-specific files
+*.vssscc
+*.vsp
+*.suo
+*.bak
+*.filters
+*.user
+
+# DotNet tool configurations
+.config/dotnet-tools.json
