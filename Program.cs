@@ -21,7 +21,10 @@ builder.Services.AddScoped<ICandidateRepo, CandidateRepo>(provider =>
                                                                 new CandidateRepo(
                                                                     builder.Configuration,
                                                                     provider.GetRequiredService<ILogger<CandidateRepo>>()) );
-builder.Services.AddScoped<SkillRepo>();
+builder.Services.AddScoped<ISkillRepo, SkillRepo>(provider =>
+                                                            new SkillRepo(
+                                                                builder.Configuration,
+                                                                provider.GetRequiredService<ILogger<SkillRepo>>()));
 
 // Configure CORS
 builder.Services.AddCors(options =>

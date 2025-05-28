@@ -168,7 +168,7 @@ namespace CandidateAPI.Controllers
         /// Link a skill to a candidate
         /// </summary>
         /// <param name="dto">Data transfer object containing an int skill id we want to link and the int candidate id</param>
-        /// <returns></returns>
+        /// <returns>200 if successful</returns>
         [HttpPost]
         [Route("skills/add")]
         public async Task<IActionResult> AddSkillToCandidate([FromBody] AddDeleteCandidateSkillDTO dto) {
@@ -188,11 +188,11 @@ namespace CandidateAPI.Controllers
         #region PUT requests
 
         /// <summary>
-        /// 
+        /// Update a candidate record
         /// </summary>
-        /// <param name="candidateId"></param>
-        /// <param name="candidate"></param>
-        /// <returns></returns>
+        /// <param name="candidateId">id of the candidate we want to update</param>
+        /// <param name="candidate">candidate details we want to persist</param>
+        /// <returns>200 if successful</returns>
         [HttpPut]
         [Route("update/{candidateId}")]
         public async Task<IActionResult> UpdateCandidate(int candidateId, [FromBody] CandidateDTO candidate)
@@ -231,10 +231,10 @@ namespace CandidateAPI.Controllers
         #region DELETE requests
 
         /// <summary>
-        /// 
+        /// removes a skill association from a candidate
         /// </summary>
-        /// <param name="dto">Data transfer object holding list of ints relating to skill ids we want to remove and the int client id</param>
-        /// <returns></returns>
+        /// <param name="dto">Data transfer object holding int relating to skill id we want to remove and the int candidate id</param>
+        /// <returns>200 if successfull</returns>
         [HttpDelete]
         [Route("skills/remove")]
         public async Task<IActionResult> DeleteSkillsFromCandidate([FromBody] AddDeleteCandidateSkillDTO dto)

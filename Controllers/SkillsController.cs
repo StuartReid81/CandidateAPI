@@ -1,6 +1,7 @@
 ﻿using CandidateAPI.Data;
 using CandidateAPI.Data.DTOS;
 using CandidateAPI.DomainModels;
+using CandidateAPI.Interfaces.Repos;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
@@ -10,9 +11,9 @@ namespace CandidateAPI.Controllers
     public class SkillsController : Controller
     {
 
-        private readonly SkillRepo _skillRepo;
+        private readonly ISkillRepo _skillRepo;
 
-        public SkillsController(SkillRepo skillRepo)
+        public SkillsController(ISkillRepo skillRepo)
         {
             _skillRepo = skillRepo;
         }
@@ -20,9 +21,9 @@ namespace CandidateAPI.Controllers
         #region GET Requests
 
         /// <summary>
-        /// 
+        /// get all skills from the db
         /// </summary>
-        /// <returns></returns>
+        /// <returns>200 with list of skills in JSON format</returns>
         [HttpGet]
         [Route("get/all")]
         public async Task<IActionResult> GetSkills()
@@ -48,10 +49,10 @@ namespace CandidateAPI.Controllers
         }
 
         /// <summary>
-        /// 
+        /// get a skill by its id
         /// </summary>
-        /// <param name="skillId"></param>
-        /// <returns></returns>
+        /// <param name="skillId">id of the skill we want to return</param>
+        /// <returns>200 with skill in Json format</returns>
         [HttpGet]
         [Route("get/{skillId}")]
         public async Task<IActionResult> GetSkill([FromRoute] int skillId)
@@ -69,39 +70,6 @@ namespace CandidateAPI.Controllers
             };
 
             return Ok(skillDTO);
-        }
-
-        #endregion
-
-        #region POST requests
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="skill"></param>
-        /// <returns></returns>
-        [HttpPost]
-        [Route("create")]
-        public IActionResult CreateSkill([FromBody] Skill skill)
-        {
-            return Json("");
-        }
-
-        #endregion
-
-        #region PUT requests
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="skillId"></param>
-        /// <param name="skill"></param>
-        /// <returns></returns>
-        [HttpPut]
-        [Route("update/{skillId}")]
-        public IActionResult UpdateCandidate(int skillId, [FromBody] Skill skill)
-        {
-            return Json("");
         }
 
         #endregion

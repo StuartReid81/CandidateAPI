@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\stuar\\Projects\\CandidateAPI\\candidateapi\\candidateapi\\CandidateAPI.csproj": {}
+    "C:\\Users\\stuar\\Projects\\CandidateAPI\\CandidateAPI\\CandidateAPI\\CandidateAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\stuar\\Projects\\CandidateAPI\\candidateapi\\candidateapi\\CandidateAPI.csproj": {
+    "C:\\Users\\stuar\\Projects\\CandidateAPI\\CandidateAPI\\CandidateAPI\\CandidateAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\stuar\\Projects\\CandidateAPI\\candidateapi\\candidateapi\\CandidateAPI.csproj",
+        "projectUniqueName": "C:\\Users\\stuar\\Projects\\CandidateAPI\\CandidateAPI\\CandidateAPI\\CandidateAPI.csproj",
         "projectName": "CandidateAPI",
-        "projectPath": "C:\\Users\\stuar\\Projects\\CandidateAPI\\candidateapi\\candidateapi\\CandidateAPI.csproj",
+        "projectPath": "C:\\Users\\stuar\\Projects\\CandidateAPI\\CandidateAPI\\CandidateAPI\\CandidateAPI.csproj",
         "packagesPath": "C:\\Users\\stuar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\stuar\\Projects\\CandidateAPI\\candidateapi\\candidateapi\\obj\\",
+        "outputPath": "C:\\Users\\stuar\\Projects\\CandidateAPI\\CandidateAPI\\CandidateAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
